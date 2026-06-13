@@ -1,4 +1,7 @@
 {
+  "framework": null,
+  "buildCommand": "echo 'Skipping build for redirect'",
+  "outputDirectory": ".",
   "redirects": [
     {
       "source": "/(.*)",
