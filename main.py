@@ -85,9 +85,9 @@ class ChatResponse(BaseModel):
 # ==========================================
 # SERVICES
 # ==========================================
-LLM_PROVIDER = os.getenv("LLM_PROVIDER", "gemini").lower()
-API_KEY = os.getenv("API_KEY")
-MODEL = os.getenv("MODEL")
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "groq").lower()
+API_KEY = os.getenv("GROQ_API_KEY", os.getenv("API_KEY"))
+MODEL = os.getenv("MODEL", "llama-3.1-8b-instant")
 
 if LLM_PROVIDER == "openai":
     import openai
