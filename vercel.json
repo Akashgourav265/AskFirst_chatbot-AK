@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://PASTE_YOUR_RENDER_URL_HERE/$1",
+      "permanent": false
+    }
+  ]
+}
